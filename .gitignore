@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local-only notes — not part of the website
+EDIT_GUIDE.md
+**/README.txt
+
+# Not published: the CV is not offered for download
+assets/docs/
+
+# Full-size original of the social-preview photo.
+# The site uses the resized copy: assets/img/og-image.jpg
+assets/img/og-cover.jpg

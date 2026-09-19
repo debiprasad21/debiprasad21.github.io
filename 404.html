@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 | Page not found</title>
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <style>
+    @font-face { font-family: "Archivo"; font-weight: 100 900; font-display: swap; src: url("/assets/fonts/archivo.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 100 900; font-display: swap; src: url("/assets/fonts/inter.woff2") format("woff2"); }
+    @font-face { font-family: "JetBrains Mono"; font-weight: 100 800; font-display: swap; src: url("/assets/fonts/jetbrains-mono.woff2") format("woff2"); }
+    :root {
+      --bg: #FAF9F7; --ink: #16161A; --soft: #4D4C52;
+      --accent: #D10A11; --border: #E3DFD8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      background: var(--bg); color: var(--ink); padding: 24px; text-align: center;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+    .flag {
+      width: 156px; height: 26px; margin: 0 auto 30px;
+      background: conic-gradient(var(--ink) 25%, #fff 0 50%, var(--ink) 0 75%, #fff 0);
+      background-size: 13px 13px;
+      border: 1px solid var(--border);
+      opacity: .9;
+    }
+    .code {
+      font-family: "Archivo", sans-serif; font-weight: 800;
+      font-size: clamp(4.5rem, 20vw, 9rem); line-height: .85;
+      letter-spacing: -.05em; color: var(--accent); margin: 0;
+    }
+    h1 {
+      font-family: "Archivo", sans-serif; font-weight: 600;
+      font-size: clamp(1.15rem, 4vw, 1.6rem); letter-spacing: -.02em;
+      margin: 1rem 0 .5rem;
+    }
+    p.msg {
+      font-family: "JetBrains Mono", monospace; font-size: .74rem;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--soft); margin: 0 0 2.2rem;
+    }
+    a {
+      display: inline-flex; align-items: center; gap: .6em;
+      padding: .85em 1.7em; background: var(--accent); color: #fff;
+      text-decoration: none; border-radius: 4px;
+      font-family: "Archivo", sans-serif; font-weight: 600;
+      font-size: .9rem; letter-spacing: .02em; text-transform: uppercase;
+      transition: background .2s, transform .2s;
+    }
+    a:hover { background: var(--ink); transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="flag" aria-hidden="true"></div>
+    <p class="code">404</p>
+    <h1>This page doesn't exist</h1>
+    <p class="msg">Wrong turn, nothing here</p>
+    <a href="/">Back to the start</a>
+  </div>
+</body>
+</html>
