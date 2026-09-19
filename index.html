@@ -114,7 +114,7 @@
         <li><span class="board__num">40<em>+</em></span><span class="board__label">Core banking<br />tables validated</span></li>
         <li><span class="board__num">1M<em>+</em></span><span class="board__label">Rows in the<br />largest table</span></li>
         <li><span class="board__num">300<em>+</em></span><span class="board__label">Data-driven<br />test cases</span></li>
-        <li><span class="board__num">10<em>%</em></span><span class="board__label">Recurring<br />data-quality issues</span></li>
+        <li><span class="board__num">-10<em>%</em></span><span class="board__label">Recurring<br />data-quality issues</span></li>
       </ul>
     </div>
 
@@ -310,7 +310,7 @@
             </p>
 
             <ul class="role__points">
-              <li><strong>40+ core banking tables</strong> across Apache Hive and Oracle, the largest carrying <strong>1M rows</strong>: wrote the SQL and HiveQL that pulled each load by ingestion ID, filtered on the ingestion-date partition, and reconciled source against masked target field by field.</li>
+              <li><strong>40+ core banking tables</strong> across Apache Hive and Oracle, the largest carrying <strong>1M+ rows</strong>: wrote the SQL and HiveQL that pulled each load by ingestion ID, filtered on the ingestion-date partition, and reconciled source against masked target field by field.</li>
               <li><strong>Data-masking compliance across 15+ sensitive PII fields</strong> (customer name, date of birth, address, account and card identifiers): verified the masking held on every field while record counts and referential links matched source exactly.</li>
               <li><strong>300+ data-driven test cases</strong> designed and executed in <strong>HP ALM</strong>, each closed with a query-output and Toad evidence pack as the formal sign-off record for banking audit.</li>
               <li>Validated <strong>Sqoop</strong> ingestion from Oracle and SQL Server into HDFS/Hive, checking <strong>Oozie</strong> batch outcomes across daily, month-end and quarter-end loads, and catching stale or missed batches before reporting used them.</li>
@@ -327,7 +327,7 @@
 
             <p class="role__impact">
               <span>Impact</span>
-              Recurring data-quality issues fell by around <strong>10%</strong>, from catching masking and
+              Recurring data-quality issues fell by around <strong>-10%</strong>, from catching masking and
               integrity errors during validation, before they reached downstream test and reporting systems.
             </p>
 
@@ -372,14 +372,14 @@
 
             <p class="role__impact">
               <span>Impact</span>
-              Drafted a structured PR review strategy and executed error‑free pre‑ and post‑deployment checklists, cutting roughly
-              <strong>1 hour from every production deployment on average</strong>; re‑planned slotting and expanded weekly capacity
+              Drafted a structured PR review strategy and executed error-free pre- and post-deployment checklists, cutting roughly
+              <strong>1 hour from every production deployment on average</strong>; re-planned slotting and expanded weekly capacity
               from <strong>4 to 5 deployments per team (+25%)</strong> in SIT and UAT.
             </p>
 
             <p class="role__impact role__impact--recognition">
               <span>Recognition</span>
-              Appreciated by the B2B client for production release delivery, and for the clean design and automation of
+              Peer recognition for a major B2B production release, and explicit recognition from the client for the
               weekly KPI and monthly audit reports.
             </p>
 
@@ -440,10 +440,10 @@
               <div class="case__col">
                 <h4>What I owned</h4>
                 <p>
-                  Pre-processing and normalising all 45 documents in Python (tokenisation,
-                  lemmatisation, section and stop-word filtering), which cut text noise before
-                  modelling and standardised inputs across the team. Then the BERTopic
-                  implementation, the country-level comparisons, and the final visualisations.
+                  I led the architecture and core implementation, shaped through discussion with my
+                  lab partners and professor: pre-processing and normalising all 45 documents in Python
+                  (tokenisation, lemmatisation, section and stop-word filtering), the BERTopic
+                  modelling, the country-level comparisons, and the final visualisations.
                 </p>
               </div>
               <div class="case__col">
