@@ -1,36 +1,25 @@
 # Debiprasad Dash — Portfolio
 
-Single-page static site. No build step, no framework, no dependencies.
-Content base: **CV MASTER v3.0 (2026-09-18)**.
+Personal portfolio site: **https://debiprasad21.github.io**
 
-## Run it
+Fonts are self-hosted (Archivo, Inter, JetBrains Mono — SIL Open Font License, see `assets/fonts/`).
 
-Open the folder in VS Code → Live Server extension → right-click `index.html` → Open with Live Server.
-
-Or from a terminal here:
+## Run locally
 
 ```bash
-python -m http.server 8000     # http://localhost:8000
+python -m http.server 8000
+# open http://localhost:8000
 ```
 
 ## Structure
 
 ```
-portfolio/
-├── index.html          all content — search "EDIT:" for the spots that need you
-├── 404.html            shown for bad URLs on GitHub Pages
-├── css/style.css       all styling — colours in :root at the top
-├── js/main.js          nav, scroll reveal, circuit line, progress bar
-├── assets/
-│   ├── img/            favicon.svg + your profile.jpg, og-cover.png
-│   └── docs/           your CV PDF
-├── .nojekyll           serve files as-is on GitHub Pages
-├── robots.txt
-├── .gitignore
-└── EDIT_GUIDE.md       full end-to-end walkthrough — read this one
+index.html        page content
+404.html          not-found page
+css/style.css     styles
+js/main.js        navigation, scroll effects, "show more"
+assets/fonts/     self-hosted web fonts + licences
+assets/img/       favicon, profile photo, link-preview image
 ```
 
-## Next steps
-
-See `EDIT_GUIDE.md`. Short version: add your photo and CV PDF → edit the `EDIT:` spots →
-push to a public repo named `debiprasad21.github.io` → Settings → Pages → deploy from `main`.
+© Debiprasad Dash. All rights reserved.
